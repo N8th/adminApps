@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #2c1f4a; /* Dark blue/purple */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+        gap: 20px;
+        padding: 20px;
+      }
+      .app-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .app-icon img {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s;
+      }
+      .app-icon img:hover {
+        transform: scale(1.1);
+      }
+      .app-title {
+        margin-top: 8px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <a href="https://admin.8x8.com/users" class="app-icon">
+        <img src="./8x8.png" alt="8x8 Admin Console" />
+        <div class="app-title">8x8 Admin Console</div>
+      </a>
+      <a href="https://command.verkada.com/access/users/" class="app-icon">
+        <img src="./Verkada.png" alt="Verkada Command Center" />
+        <div class="app-title">Verkada Command Center</div>
+      </a>
+      <a href="https://adminconsole.adobe.com/r/users" class="app-icon">
+        <img src="./Adobe.png" alt="Adobe Admin Console" />
+        <div class="app-title">Adobe Admin Console</div>
+      </a>
+      <a
+        href="https://prod-avs-setnaio.lightning.force.com/lightning/o/inscor__Printer__c/list"
+        class="app-icon"
+      >
+        <img src="./printnode.png" alt="Salesforce Printers" />
+        <div class="app-title">Salesforce Printers</div>
+      </a>
+      <a
+        href="https://prod-avs-setnaio.lightning.force.com/lightning/o/inscor__Employee__c/list"
+        class="app-icon"
+      >
+        <img src="./Salesforce.png" alt="Salesforce Employees" />
+        <div class="app-title">Salesforce Employees</div>
+      </a>
+    </div>
+  </body>
+</html>
